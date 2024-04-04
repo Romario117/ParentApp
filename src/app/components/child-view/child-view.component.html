@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Ciudad/País</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let dato of datosEntrantes">
+                <th scope="row">{{ dato.id }}</th>
+                <td>{{ dato.nombre }}</td>
+                <td>{{ dato.ciudad || dato.pais }}</td>
+              </tr>
+            </tbody>
+          </table>
+                  
+    </div>
+</div>
